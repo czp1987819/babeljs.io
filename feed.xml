@@ -5,8 +5,8 @@
     <description>用于编写下一代 JavaScript 的编译器</description>
     <link>https://babeljs.cn/</link>
     <atom:link href="https://babeljs.cn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Dec 2017 08:15:07 +0000</pubDate>
-    <lastBuildDate>Mon, 11 Dec 2017 08:15:07 +0000</lastBuildDate>
+    <pubDate>Tue, 12 Dec 2017 07:12:54 +0000</pubDate>
+    <lastBuildDate>Tue, 12 Dec 2017 07:12:54 +0000</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -850,7 +850,7 @@ Also, as stages change over time then people who aren’t using shrinkwrap or ya
       </item>
     
       <item>
-        <title>Zero-config code transformation with babel-macros</title>
+        <title>Zero-config code transformation with babel-plugin-macros</title>
         <description>&lt;p&gt;Babel started out as a transpiler to let you write the latest version of the ECMAScript specification but ship to environments that don’t implement those features yet. But it has become much more than that. &lt;a href=&quot;https://tomdale.net/2017/09/compilers-are-the-new-frameworks/&quot;&gt;“Compilers are the New Frameworks”&lt;/a&gt; says &lt;a href=&quot;https://twitter.com/tomdale&quot;&gt;Tom Dale&lt;/a&gt; and I could not agree more. We’re seeing more and more compile-time optimizations for libraries and frameworks. I’m not talking about syntax extensions to the language, but simple code transformations that enable patterns that would be difficult to accomplish otherwise.&lt;/p&gt;
 
 &lt;p&gt;One of my favorite things about compiler plugins is that you can use them to optimize the user experience and developer experience at the same time. (Read more about &lt;a href=&quot;https://medium.com/@kentcdodds/how-writing-custom-babel-and-eslint-plugins-can-increase-your-productivity-and-improve-user-fd6dd8076e26&quot;&gt;“How writing custom Babel &amp;amp; ESLint plugins can increase productivity &amp;amp; improve user experience”&lt;/a&gt;).&lt;/p&gt;
@@ -865,11 +865,11 @@ Also, as stages change over time then people who aren’t using shrinkwrap or ya
 
 &lt;p&gt;These problems could be solved if we could import Babel plugins and apply them directly to our code. This would mean the transformation is more explicit, we wouldn’t need to add them to configuration, and ordering can happen in the order the plugins are imported. Wouldn’t that be cool!?!?&lt;/p&gt;
 
-&lt;h2 id=&quot;introducing-babel-macros-&quot;&gt;Introducing &lt;a href=&quot;https://github.com/kentcdodds/babel-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt;&lt;/a&gt; 🎣&lt;/h2&gt;
+&lt;h2 id=&quot;introducing-babel-plugin-macros-&quot;&gt;Introducing &lt;a href=&quot;https://github.com/kentcdodds/babel-plugin-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt;&lt;/a&gt; 🎣&lt;/h2&gt;
 
-&lt;p&gt;Guess what! A tool like this exists! &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; is a new Babel plugin that allows you to do exactly what we’re talking about. It’s a “new” approach to code transformation. It enables you to have zero-config, importable code transformations. &lt;a href=&quot;https://github.com/threepointone/babel-macros&quot;&gt;The idea&lt;/a&gt; came from &lt;a href=&quot;https://twitter.com/threepointone&quot;&gt;Sunil Pai&lt;/a&gt; and caught my attention in &lt;a href=&quot;https://github.com/facebookincubator/create-react-app/issues/2730&quot;&gt;this create-react-app issue&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Guess what! A tool like this exists! &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; is a new Babel plugin that allows you to do exactly what we’re talking about. It’s a “new” approach to code transformation. It enables you to have zero-config, importable code transformations. &lt;a href=&quot;https://github.com/threepointone/babel-plugin-macros&quot;&gt;The idea&lt;/a&gt; came from &lt;a href=&quot;https://twitter.com/threepointone&quot;&gt;Sunil Pai&lt;/a&gt; and caught my attention in &lt;a href=&quot;https://github.com/facebookincubator/create-react-app/issues/2730&quot;&gt;this create-react-app issue&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;So what does it look like? Whelp! There are already a few &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; packages out there you can try today!&lt;/p&gt;
+&lt;p&gt;So what does it look like? Whelp! There are already a few &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; packages out there you can try today!&lt;/p&gt;
 
 &lt;p&gt;Here’s a real-world example of using &lt;a href=&quot;https://github.com/kentcdodds/preval.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt;&lt;/a&gt; to inline an SVG in &lt;a href=&quot;https://github.com/kentcdodds/glamorous-website&quot;&gt;a universal application&lt;/a&gt; built with &lt;a href=&quot;https://github.com/zeit/next.js&quot;&gt;Next.js&lt;/a&gt;:&lt;/p&gt;
 
@@ -900,28 +900,28 @@ Also, as stages change over time then people who aren’t using shrinkwrap or ya
   &lt;li&gt;If you misconfigured &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-preval&lt;/code&gt; you’d get a cryptic error like: &lt;code class=&quot;highlighter-rouge&quot;&gt;Uncaught ReferenceError: preval is not defined&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;By using &lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt;, we don’t have any of those problems because:&lt;/p&gt;
+&lt;p&gt;By using &lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt;, we don’t have any of those problems because:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;The import is there and used explicitly.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; needs to be added to your config, but only once, then you can use all the macros you’d like (even local macros!)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; needs to be added to your config, but only once, then you can use all the macros you’d like (even local macros!)&lt;/li&gt;
   &lt;li&gt;No need to update ESLint config because it’s explicit.&lt;/li&gt;
-  &lt;li&gt;If you misconfigure &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; then you’ll get &lt;a href=&quot;https://github.com/kentcdodds/babel-macros/blob/f7c9881ee22b19b3c53c93711af6a42895ba1c71/src/__tests__/__snapshots__/index.js.snap#L100&quot;&gt;a much more friendly error message&lt;/a&gt; that indicates what the actual problem is pointing you to documentation.&lt;/li&gt;
+  &lt;li&gt;If you misconfigure &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; then you’ll get &lt;a href=&quot;https://github.com/kentcdodds/babel-plugin-macros/blob/f7c9881ee22b19b3c53c93711af6a42895ba1c71/src/__tests__/__snapshots__/index.js.snap#L100&quot;&gt;a much more friendly error message&lt;/a&gt; that indicates what the actual problem is pointing you to documentation.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;&lt;strong&gt;So what is it really? The TL;DR is that &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; is a simpler way to write and use Babel transforms.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;So what is it really? The TL;DR is that &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; is a simpler way to write and use Babel transforms.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;There are already several &lt;a href=&quot;https://www.npmjs.com/browse/keyword/babel-macros&quot;&gt;published &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt;&lt;/a&gt; you can use, including &lt;a href=&quot;https://github.com/kentcdodds/preval.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/kentcdodds/codegen.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;codegen.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/dralletje/idx.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;idx.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/emotion-js/emotion/blob/master/docs/babel-macros.md&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;emotion/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/vinhlh/tagged-translations#via-babel-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tagged-translations/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/mattphillips/babel-plugin-console#macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-console/scope.macro&lt;/code&gt;&lt;/a&gt;, and &lt;a href=&quot;https://github.com/threepointone/glamor/pull/312&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;glamor&lt;/code&gt; 🔜&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are already several &lt;a href=&quot;https://www.npmjs.com/browse/keyword/babel-plugin-macros&quot;&gt;published &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt;&lt;/a&gt; you can use, including &lt;a href=&quot;https://github.com/kentcdodds/preval.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/kentcdodds/codegen.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;codegen.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/dralletje/idx.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;idx.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/emotion-js/emotion/blob/master/docs/babel-macros.md&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;emotion/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/vinhlh/tagged-translations#via-babel-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tagged-translations/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/mattphillips/babel-plugin-console#macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-console/scope.macro&lt;/code&gt;&lt;/a&gt;, and &lt;a href=&quot;https://github.com/threepointone/glamor/pull/312&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;glamor&lt;/code&gt; 🔜&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;I think we’ve only begun to scratch the surface of what &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; can do. I’m hoping that we can land it in &lt;a href=&quot;https://github.com/facebookincubator/create-react-app/issues/2730&quot;&gt;create-react-app&lt;/a&gt; so folks using &lt;code class=&quot;highlighter-rouge&quot;&gt;create-react-app&lt;/code&gt; can have even more power with zero configuration. I’m really excited to see more Babel plugins expose a &lt;code class=&quot;highlighter-rouge&quot;&gt;macro&lt;/code&gt; in addition to the existing plugin functionality they already have. I can’t wait to see folks create macros that are specific to their project needs.&lt;/p&gt;
+&lt;p&gt;I think we’ve only begun to scratch the surface of what &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; can do. I’m hoping that we can land it in &lt;a href=&quot;https://github.com/facebookincubator/create-react-app/issues/2730&quot;&gt;create-react-app&lt;/a&gt; so folks using &lt;code class=&quot;highlighter-rouge&quot;&gt;create-react-app&lt;/code&gt; can have even more power with zero configuration. I’m really excited to see more Babel plugins expose a &lt;code class=&quot;highlighter-rouge&quot;&gt;macro&lt;/code&gt; in addition to the existing plugin functionality they already have. I can’t wait to see folks create macros that are specific to their project needs.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Creating a macros is even easier than a regular Babel plugin&lt;/strong&gt;, but it does require a bit of knowledge around ASTs and Babel. If this is new to you, there are &lt;a href=&quot;https://kentcdodds.com/talks/#writing-custom-babel-and-eslint-plugins-with-asts&quot;&gt;a&lt;/a&gt;, &lt;a href=&quot;https://github.com/thejameskyle/babel-handbook&quot;&gt;few&lt;/a&gt;, &lt;a href=&quot;https://kentcdodds.com/workshops/#code-transformation-and-linting&quot;&gt;resources&lt;/a&gt; for you 😀&lt;/p&gt;
 
 &lt;p&gt;Good luck to you all! 👋&lt;/p&gt;
 
-&lt;p&gt;P.S. I should mention that language macros are not a new concept at all. Being able to teach a language new tricks has been around for a very long time. In fact, there’s already &lt;a href=&quot;http://sweetjs.org/&quot;&gt;such a tool for JavaScript&lt;/a&gt; and even &lt;a href=&quot;https://github.com/codemix/babel-plugin-macros&quot;&gt;one implemented as a Babel plugin already&lt;/a&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; takes a slightly different approach however. While macros have often been associated with defining new syntax for a language, that’s not the goal of &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; at all. In the case of &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-macros&lt;/code&gt; it’s more about code transformations.&lt;/p&gt;
+&lt;p&gt;P.S. I should mention that language macros are not a new concept at all. Being able to teach a language new tricks has been around for a very long time. In fact, there’s already &lt;a href=&quot;http://sweetjs.org/&quot;&gt;such a tool for JavaScript&lt;/a&gt; and even &lt;a href=&quot;https://github.com/codemix/babel-plugin-macros&quot;&gt;one implemented as a Babel plugin already&lt;/a&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; takes a slightly different approach however. While macros have often been associated with defining new syntax for a language, that’s not the goal of &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; at all. In the case of &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; it’s more about code transformations.&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Sep 2017 11:00:00 +0000</pubDate>
         <link>https://babeljs.cn/blog/2017/09/11/zero-config-with-babel-macros.html</link>
@@ -1762,6 +1762,15 @@ If you import a Babel package in a library you may need to use &lt;code class=&q
 &lt;/div&gt;
 
 &lt;h2 id=&quot;ast-changes&quot;&gt;AST changes&lt;/h2&gt;
+
+&lt;h3 id=&quot;jsx-and-ts-node-builders-from-babeltypes-package-renamed&quot;&gt;JSX* and TS* node builders (from @babel/types package) renamed&lt;/h3&gt;
+
+&lt;p&gt;The case has been changed: &lt;code class=&quot;highlighter-rouge&quot;&gt;jsx&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ts&lt;/code&gt; are now in lowercase.&lt;/p&gt;
+
+&lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gd&quot;&gt;- t.jSXIdentifier()
+&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+ t.jsxIdentifier()
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;tokens-removed&quot;&gt;Tokens removed&lt;/h3&gt;
 
