@@ -7,8 +7,8 @@
 
     // config is https://github.com/algolia/docsearch-configs/blob/master/configs/babeljs.json
     var $search = docsearch({
-        apiKey: 'd42906b043c5422ea07b44fd49c40a0d',
-        indexName: 'babeljs',
+        apiKey: '85de6a57adc23b689e8d0a58909f55ae',
+        indexName: 'babeljs_cn',
         inputSelector: $selector,
         debug: false // Set debug to true if you want to inspect the dropdown
     });
