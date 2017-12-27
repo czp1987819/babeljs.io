@@ -5,8 +5,8 @@
     <description>用于编写下一代 JavaScript 的编译器</description>
     <link>https://babeljs.cn/</link>
     <atom:link href="https://babeljs.cn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Dec 2017 01:41:45 +0000</pubDate>
-    <lastBuildDate>Wed, 27 Dec 2017 01:41:45 +0000</lastBuildDate>
+    <pubDate>Wed, 27 Dec 2017 02:05:39 +0000</pubDate>
+    <lastBuildDate>Wed, 27 Dec 2017 02:05:39 +0000</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -911,7 +911,7 @@ Also, as stages change over time then people who aren’t using shrinkwrap or ya
 
 &lt;p&gt;&lt;strong&gt;So what is it really? The TL;DR is that &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; is a simpler way to write and use Babel transforms.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;There are already several &lt;a href=&quot;https://www.npmjs.com/browse/keyword/babel-plugin-macros&quot;&gt;published &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt;&lt;/a&gt; you can use, including &lt;a href=&quot;https://github.com/kentcdodds/preval.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/kentcdodds/codegen.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;codegen.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/dralletje/idx.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;idx.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/emotion-js/emotion/blob/master/docs/babel-macros.md&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;emotion/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/vinhlh/tagged-translations#via-babel-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tagged-translations/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/mattphillips/babel-plugin-console#macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-console/scope.macro&lt;/code&gt;&lt;/a&gt;, and &lt;a href=&quot;https://github.com/threepointone/glamor/pull/312&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;glamor&lt;/code&gt; 🔜&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;There are already several &lt;a href=&quot;https://www.npmjs.com/browse/keyword/babel-plugin-macros&quot;&gt;published &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt;&lt;/a&gt; you can use, including &lt;a href=&quot;https://github.com/kentcdodds/preval.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/kentcdodds/codegen.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;codegen.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/dralletje/idx.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;idx.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/emotion-js/emotion/blob/master/docs/babel.md#babel-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;emotion/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/vinhlh/tagged-translations#via-babel-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tagged-translations/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/mattphillips/babel-plugin-console#macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-console/scope.macro&lt;/code&gt;&lt;/a&gt;, and &lt;a href=&quot;https://github.com/threepointone/glamor/pull/312&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;glamor&lt;/code&gt; 🔜&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
