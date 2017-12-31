@@ -5,9 +5,319 @@
     <description>用于编写下一代 JavaScript 的编译器</description>
     <link>https://babeljs.cn/</link>
     <atom:link href="https://babeljs.cn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 30 Dec 2017 13:36:21 +0000</pubDate>
-    <lastBuildDate>Sat, 30 Dec 2017 13:36:21 +0000</lastBuildDate>
+    <pubDate>Sun, 31 Dec 2017 10:11:00 +0000</pubDate>
+    <lastBuildDate>Sun, 31 Dec 2017 10:11:00 +0000</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>Nearing the 7.0 Release</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Check out &lt;a href=&quot;https://babeljs.io/blog/2017/09/12/planning-for-7.0&quot;&gt;Planning for 7.0&lt;/a&gt; for the last updates throughout the 7.0 pre-releases. If something isn’t clear in this post let me know!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;project-updates&quot;&gt;Project Updates&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We started a new &lt;a href=&quot;https://babeljs.io/docs/community/videos/&quot;&gt;videos page&lt;/a&gt;! We created this for people wanting to learn more about how Babel works and to help others contribute back. This page contains videos of conference talks on Babel and related concepts from team members and people in the community (you can send a PR if you have done a talk like this as well).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://babeljs.io/docs/community/videos/&quot;&gt;&lt;img src=&quot;https://i.imgur.com/DkBEsfo.png&quot; alt=&quot;videos&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We created a new &lt;a href=&quot;https://babeljs.io/team&quot;&gt;team page&lt;/a&gt; as well! We will be updating this page in the future with more information about what people work on and why they are involved. For such a large project, there are many ways to get involved and help out.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://babeljs.io/team&quot;&gt;&lt;img src=&quot;https://i.imgur.com/YcWgRwf.png&quot; alt=&quot;team&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Babel turned 3 years old on &lt;a href=&quot;https://babeljs.io/blog/2017/10/05/babel-turns-three&quot;&gt;September 28, 2017&lt;/a&gt;!&lt;/li&gt;
+  &lt;li&gt;Daniel &lt;a href=&quot;https://twitter.com/left_pad/status/926096965565370369&quot;&gt;moved&lt;/a&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;babel/babylon&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;babel/babel-preset-env&lt;/code&gt; into the main Babel monorepo, &lt;a href=&quot;https://github.com/babel/babel&quot;&gt;babel/babel&lt;/a&gt;, and this includes all git history, labels, issues.&lt;/li&gt;
+  &lt;li&gt;We received a &lt;a href=&quot;https://twitter.com/left_pad/status/923696620935421953&quot;&gt;$1k/month donation&lt;/a&gt; from Facebook Open Source!
+    &lt;ul&gt;
+      &lt;li&gt;This the highest monthly donation we have gotten since the start (next highest is $100/month).&lt;/li&gt;
+      &lt;li&gt;In the meantime, we will use our funds to meet in person and to send people to TC39 meetings. These meetings are every 2 months around the world.&lt;/li&gt;
+      &lt;li&gt;If a company wants to specifically sponsor something, we can create separate issues to track. This was previously difficult because we had to pay out of pocket, or we had to find a conference on the same week to speak at to help cover expenses.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-you-can-help&quot;&gt;How you can help!&lt;/h3&gt;
+
+&lt;p&gt;If your company would like to &lt;strong&gt;give back&lt;/strong&gt; by supporting a fundamental part of JavaScript development and it’s future, consider donating to our &lt;a href=&quot;https://opencollective.com/babel&quot;&gt;Open Collective&lt;/a&gt;. You can also donate developer time to help maintain the project.&lt;/p&gt;
+
+&lt;h4 id=&quot;1-help-maintain-the-project-developer-time-at-work&quot;&gt;#1 Help Maintain the Project (developer time at work)&lt;/h4&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Engineer: There&amp;#39;s a thing in SQL Server Enterprise blocking us&lt;br /&gt;Company: Let&amp;#39;s set up a call next week with them an ongoing discussion to resolve it next quarter&lt;br /&gt;&lt;br /&gt;Engineer: There&amp;#39;s a thing we need in babel, can I spent 2 days with a PR for it&lt;br /&gt;Company: lol no it&amp;#39;s their job &lt;a href=&quot;https://t.co/icgaoJ0dTe&quot;&gt;https://t.co/icgaoJ0dTe&lt;/a&gt;&lt;/p&gt;&amp;mdash; Shiya (@ShiyaLuo) &lt;a href=&quot;https://twitter.com/ShiyaLuo/status/931230821976907776?ref_src=twsrc%5Etfw&quot;&gt;November 16, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;The best thing we can get on this project are people committed to helping out with the project given the massive amount of work/responsibility it takes. Again, &lt;a href=&quot;https://dev.to/hzoo/im-the-maintainer-of-babel-ask-me-anything-282/comments/1k6d&quot;&gt;I never felt ready&lt;/a&gt; to be a maintainer but somehow stumbled upon it but I’m just one person, and our team is just a few people.&lt;/p&gt;
+
+&lt;h4 id=&quot;2-fund-development&quot;&gt;#2 Fund development&lt;/h4&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Company: &amp;quot;We&amp;#39;d like to use SQL Server Enterprise&amp;quot;&lt;br /&gt;MS: &amp;quot;That&amp;#39;ll be a quarter million dollars + $20K/month&amp;quot;&lt;br /&gt;Company: &amp;quot;Ok!&amp;quot;&lt;br /&gt;...&lt;br /&gt;Company: &amp;quot;We&amp;#39;d like to use Babel&amp;quot;&lt;br /&gt;Babel: &amp;quot;Ok! npm i babel --save&amp;quot;&lt;br /&gt;Company: &amp;quot;Cool&amp;quot;&lt;br /&gt;Babel: &amp;quot;Would you like to help contribute financially?&amp;quot;&lt;br /&gt;Company: &amp;quot;lol no&amp;quot;&lt;/p&gt;&amp;mdash; Adam Rackis (@AdamRackis) &lt;a href=&quot;https://twitter.com/AdamRackis/status/931195056479965185?ref_src=twsrc%5Etfw&quot;&gt;November 16, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;We are definetely looking to be able to fund people on the team to work full-time. Logan in particular left his job a while ago and is using our current funds to work on Babel part time at the moment!&lt;/p&gt;
+
+&lt;h4 id=&quot;3-contribute-in-other-ways-&quot;&gt;#3 Contribute in other ways 😊&lt;/h4&gt;
+
+&lt;p&gt;For example, &lt;a href=&quot;https://twitter.com/angustweets&quot;&gt;Angus&lt;/a&gt; made us an &lt;a href=&quot;https://medium.com/@angustweets/hallelujah-in-praise-of-babel-977020010fad&quot;&gt;official song&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h3 id=&quot;upgrading&quot;&gt;Upgrading&lt;/h3&gt;
+
+&lt;p&gt;We will also be working on a upgrade tool that will help &lt;a href=&quot;https://github.com/babel/notes/issues/44&quot;&gt;rewrite your package.json/.babelrc files&lt;/a&gt; and more. Ideally this means it would modify any necessary version number changes, package renames, and config changes.&lt;/p&gt;
+
+&lt;p&gt;Please reach out to help and to post issues when trying to update! This is a great opportunity to get involved and to help the ecosystem update!&lt;/p&gt;
+
+&lt;h3 id=&quot;summary-of-the-previous-post&quot;&gt;Summary of the &lt;a href=&quot;https://babeljs.io/blog/2017/09/12/planning-for-7.0&quot;&gt;previous post&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Dropped Node 0.10/0.12/5 support.&lt;/li&gt;
+  &lt;li&gt;Updated &lt;a href=&quot;https://github.com/babel/proposals/issues&quot;&gt;TC39 proposals&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Numeric Separator: &lt;code class=&quot;highlighter-rouge&quot;&gt;1_000&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Optional Chaining Operator: &lt;code class=&quot;highlighter-rouge&quot;&gt;a?.b&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;import.meta&lt;/code&gt; (parseble)&lt;/li&gt;
+      &lt;li&gt;Optional Catch Binding: &lt;code class=&quot;highlighter-rouge&quot;&gt;try { a } catch {}&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;BigInt (parseble): &lt;code class=&quot;highlighter-rouge&quot;&gt;2n&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Split export extensions into &lt;code class=&quot;highlighter-rouge&quot;&gt;export-default-from&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;export-ns-form&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc.js&lt;/code&gt; support (a config using JavaScript instead of JSON)&lt;/li&gt;
+  &lt;li&gt;Added a new Typescript Preset + separated the React/Flow presets
+    &lt;ul&gt;
+      &lt;li&gt;Added &lt;a href=&quot;https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html&quot;&gt;JSX Fragment Support&lt;/a&gt; and various Flow updates&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Removed the internal &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-runtime&lt;/code&gt; dependency for smaller size&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;newly-updated-tc39-proposals&quot;&gt;Newly Updated TC39 Proposals&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pipeline Operator: &lt;code class=&quot;highlighter-rouge&quot;&gt;a |&amp;gt; b&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Throw Expressions: &lt;code class=&quot;highlighter-rouge&quot;&gt;() =&amp;gt; throw 'hi'&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Nullish Coalescing Operator: &lt;code class=&quot;highlighter-rouge&quot;&gt;a ?? b&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;deprecated-yearly-presets-eg-babel-preset-es20xx&quot;&gt;Deprecated Yearly Presets (e.g. babel-preset-es20xx)&lt;/h3&gt;
+
+&lt;p&gt;TL;DR: use &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-preset-env&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;What’s better than you having to decide which Babel preset to use? Having it done for you, automatically!&lt;/p&gt;
+
+&lt;p&gt;Even though the amount of work that goes into maintaining the lists of data is humongous — again, why we need help — it solves multiple issues. It makes sure users are up to date with the spec. It means less configuration/package confusion. It means an easier upgrade path. And it means less issues about what is what.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-preset-env&lt;/code&gt; is actually a pretty &lt;em&gt;old&lt;/em&gt; preset that replaces every other syntax preset that you will need (es2015, es2016, es2017, es20xx, latest, etc…).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://npm-stat.com/charts.html?package=babel-preset-env&amp;amp;package=babel-preset-es2015&amp;amp;package=babel-preset-es2016&amp;amp;package=babel-preset-es2017&amp;amp;package=babel-preset-latest&amp;amp;from=2016-11-21&amp;amp;to=2017-11-21&quot;&gt;&lt;img src=&quot;https://i.imgur.com/nNKKFcp.png&quot; alt=&quot;npm presets&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It compiles the latest yearly release of JavaScript (whatever is in Stage 4) which replaces all the old presets. But it also has the abilitiy to compile according to target environments you specify: whether that is for development mode, like the latest version of a browser, or for multiple builds, like a version for IE, and then another version for evergreen browsers.&lt;/p&gt;
+
+&lt;h3 id=&quot;not-removing-the-stage-presets-babel-preset-stage-x&quot;&gt;Not removing the Stage presets (babel-preset-stage-x)&lt;/h3&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Frustration level if we remove the Stage presets in Babel? (in favor explicitly requiring proposal plugins since they aren&amp;#39;t JavaScript yet)&lt;/p&gt;&amp;mdash; Henry Zhu (@left_pad) &lt;a href=&quot;https://twitter.com/left_pad/status/873242704364306433?ref_src=twsrc%5Etfw&quot;&gt;June 9, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;We can always keep it up to date, and maybe we just need to determine a better system than what these presets are currently.&lt;/p&gt;
+
+&lt;p&gt;Right now, stage presets are literally just a list of plugins that we manually update after TC39 meetings. To make this managable, we need to allow major version bumps for these “unstable” packages. Part of the reason for this is because the community will re-create these packages anyway, so we might as well do it from an official package and then have the ability to provide better messaging, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;renames-scoped-packages-babelx&quot;&gt;Renames: Scoped Packages (&lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/x&lt;/code&gt;)&lt;/h3&gt;
+
+&lt;p&gt;Here is a poll I did almost a year ago:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Thoughts on &lt;a href=&quot;https://twitter.com/babeljs&quot;&gt;@babeljs&lt;/a&gt; using npm scoped packages for 7.0?&lt;/p&gt;&amp;mdash; Henry Zhu (@left_pad) &lt;a href=&quot;https://twitter.com/left_pad/status/821551189166878722&quot;&gt;January 18, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Back then, not a lot of projects used scoped packages, so most people didn’t even know they existed. You may also have had to pay for a npm org account back then, while now it’s free (and supports non scoped packages, too). The issues with searching for scoped packages are solved and download counts work. The only thing left is that some 3rd party registries still don’t support scoped packages, and I think we are at a point where it seems pretty unreasonable to wait on that.&lt;/p&gt;
+
+&lt;p&gt;If you want reasons why we prefer scoped packages:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Naming is difficult: we won’t have to check if someone else decided to use our naming convention for their own plugin&lt;/li&gt;
+  &lt;li&gt;Similarly, package squatting
+    &lt;ul&gt;
+      &lt;li&gt;Sometimes people create &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-preset-20xx&lt;/code&gt; or some other package because it’s funny, and then we have to make an issue/email to ask for it back.&lt;/li&gt;
+      &lt;li&gt;People have a legit package, but it happens to be the same name as what we wanted to call it.
+  - People see that a new proposal is merging (like optional chaining, pipeline operator) and decide to fork and publish a version of it under the same name. Then, when we publish, it tell us the package was already published 🤔. Then, I have to find their email and email both them and npm support to get the package back and republish.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;What is an “official” package and what is a user/community package with the same name? We can get issue reports of people using misnamed or unofficial packages because they assumed it was part of Babel. One example of this was a report that &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-env&lt;/code&gt; was rewriting their &lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt; file, and it took them a while to realize it wasn’t &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-preset-env&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, it seems obvious we should use scoped packages, and, if anything, we should have done it much earlier 🙂!&lt;/p&gt;
+
+&lt;p&gt;Examples of the scoped name change:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-cli&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/cli&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-core&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/core&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-preset-env&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/preset-env&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;renames--proposal-&quot;&gt;Renames: &lt;code class=&quot;highlighter-rouge&quot;&gt;-proposal-&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;Any proposals will be named with &lt;code class=&quot;highlighter-rouge&quot;&gt;-proposal-&lt;/code&gt; now to signify that they aren’t officially in JavaScript yet.&lt;/p&gt;
+
+&lt;p&gt;So &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/plugin-transform-class-properties&lt;/code&gt; becomes &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/plugin-proposal-class-properties&lt;/code&gt;, and we would name it back once it gets into Stage 4.&lt;/p&gt;
+
+&lt;h3 id=&quot;renames-drop-the-year-from-the-plugin-name&quot;&gt;Renames: Drop the year from the plugin name&lt;/h3&gt;
+
+&lt;p&gt;Previous plugins had the year in the name, but it doesn’t seem to be necessary now.&lt;/p&gt;
+
+&lt;p&gt;So &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/plugin-transform-es2015-classes&lt;/code&gt; becomes &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/plugin-transform-classes&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since years were only the case for es3/es2015, we didn’t change anything from es2016 or es2017. However, we are deprecating those presets in favor of preset-env, and, for the template literal revision, we just added it to the template literal transform for simplicity.&lt;/p&gt;
+
+&lt;h3 id=&quot;peer-dependencies--integrations&quot;&gt;Peer Dependencies + Integrations&lt;/h3&gt;
+
+&lt;p&gt;We are introducing a peer dependencies on &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/core&lt;/code&gt; for all the plugins (&lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/plugin-class-properties&lt;/code&gt;), presets (&lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/preset-env&lt;/code&gt;), and top level packages (&lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/cli&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-loader&lt;/code&gt;).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;peerDependencies are dependencies expected to be used by your code, as opposed to dependencies only used as an implementation detail.
+— &lt;a href=&quot;https://stackoverflow.com/a/34645112&quot;&gt;Stijn de Witt via StackOverflow&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-loader&lt;/code&gt; already had a &lt;code class=&quot;highlighter-rouge&quot;&gt;peerDependency&lt;/code&gt; on &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-core&lt;/code&gt;, so this just changes it to &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/core&lt;/code&gt;. This is just so that people weren’t trying to install these packages on the wrong version of Babel.&lt;/p&gt;
+
+&lt;p&gt;For tools that already have a &lt;code class=&quot;highlighter-rouge&quot;&gt;peerDependency&lt;/code&gt; on &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-core&lt;/code&gt; and aren’t ready for a major bump (since changing the peer dependency is a breaking change), we have published a new version of &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-core&lt;/code&gt; to bridge the changes over with the new version &lt;a href=&quot;https://github.com/babel/babel-bridge&quot;&gt;babel-core@7.0.0-bridge.0&lt;/a&gt;. For more information check out &lt;a href=&quot;https://github.com/facebook/jest/pull/4557#issuecomment-344048628&quot;&gt;this issue&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Similarly, packages like &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-babel&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;rollup-plugin-babel&lt;/code&gt;, etc, all used to have &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-core&lt;/code&gt; as a dependency. Now these will just have a &lt;code class=&quot;highlighter-rouge&quot;&gt;peerDependency&lt;/code&gt; on &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/core&lt;/code&gt;. This lets these packages not have to bump major versions when the &lt;code class=&quot;highlighter-rouge&quot;&gt;@babel/core&lt;/code&gt; API hasn’t changed.&lt;/p&gt;
+
+&lt;h3 id=&quot;5224-independent-publishing-of-experimental-packages&quot;&gt;&lt;a href=&quot;https://github.com/babel/babel/pull/5224&quot;&gt;#5224&lt;/a&gt; Independent Publishing of Experimental Packages&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I mention this in &lt;a href=&quot;http://babeljs.io/blog/2016/12/07/the-state-of-babel&quot;&gt;The State of Babel&lt;/a&gt; in the &lt;code class=&quot;highlighter-rouge&quot;&gt;Versioning&lt;/code&gt; section. &lt;a href=&quot;https://github.com/babel/babylon/issues/275&quot;&gt;Github Issue&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;You might remember that after Babel 6, Babel became a set of npm packages with its own ecosystem of custom presets and plugins.&lt;/p&gt;
+
+&lt;p&gt;However since then, we have always used a “fixed/synchronized” versioning system (so that no package is on v7.0 or above). When we do a new release such as &lt;code class=&quot;highlighter-rouge&quot;&gt;v6.23.0&lt;/code&gt; only packages that have updated code in the source are published with the new version while the rest of the packages are left as is. This mostly works in practice because we use &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; in our packages.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately this kind of system requires that a major version be released for all packages once a single package needs it. This either means we make a lot small breaking changes (unnecessary), or we batch lots of breaking changes into a single release. Instead, we want to differentiate between the experimental packages (Stage 0, etc.) and everything else (es2015).&lt;/p&gt;
+
+&lt;p&gt;This means we intend to make major version bumps to any experimental proposal plugins when the spec changes rather than waiting to update all of Babel. So anything that is &amp;lt; Stage 4 would be open to breaking changes in the form of major version bumps and same with the Stage presets themselves (if we don’t drop them entirely).&lt;/p&gt;
+
+&lt;p&gt;This goes with our decision to change TC39 proposal plugins to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;-proposal-&lt;/code&gt; name. If the spec changes, we will do a major version bump to the plugin and the preset it belongs to (as opposed to just making a patch version which may break for people). Then, we will need to deprecate the old versions and setup an infrastructure to automatically update people so that everyone is up to date on what the spec will become (and so they don’t get stuck on something, like we have with decorators).&lt;/p&gt;
+
+&lt;h3 id=&quot;the-env-option-in-babelrc-is-not-being-deprecated&quot;&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;env&lt;/code&gt; option in &lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt; is not being deprecated!&lt;/h3&gt;
+
+&lt;p&gt;Unlike in the &lt;a href=&quot;https://babeljs.io/blog/2017/09/12/planning-for-7.0#deprecate-the-env-option-in-babelrc&quot;&gt;last post&lt;/a&gt;, we just fixed the merging behavior to be &lt;a href=&quot;https://twitter.com/left_pad/status/936687774098444288&quot;&gt;more consistent&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The configuration in &lt;code class=&quot;highlighter-rouge&quot;&gt;env&lt;/code&gt; is given higher priority than root config items, and instead of just being a weird approach of using both, plugins and presets now merge based on their identity, so you can do&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;presets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'env'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;modules&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;env&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;presets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+         &lt;span class=&quot;s1&quot;&gt;'env'&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;with &lt;code class=&quot;highlighter-rouge&quot;&gt;BABEL_ENV=test&lt;/code&gt;, which would replace the root env config, with the one from test, which has no options.&lt;/p&gt;
+
+&lt;h3 id=&quot;support-class-a-extends-array-oldest-caveat&quot;&gt;&lt;a href=&quot;https://twitter.com/left_pad/status/940723982638157829&quot;&gt;Support &lt;code class=&quot;highlighter-rouge&quot;&gt;class A extends Array&lt;/code&gt; (oldest caveat)&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Babel will automatically wrap any native built-ins like &lt;code class=&quot;highlighter-rouge&quot;&gt;Array&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Error&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;HTMLElement&lt;/code&gt; etc so that doing this just works when compiling classes.&lt;/p&gt;
+
+&lt;h3 id=&quot;speed&quot;&gt;Speed&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Many &lt;a href=&quot;https://twitter.com/rauchg/status/924349334346276864&quot;&gt;fixes&lt;/a&gt; from &lt;a href=&quot;https://twitter.com/bmeurer&quot;&gt;bmeurer&lt;/a&gt; on the v8 team!&lt;/li&gt;
+  &lt;li&gt;60% faster via the &lt;a href=&quot;https://github.com/v8/web-tooling-benchmark&quot;&gt;web-tooling-benchmark&lt;/a&gt; https://twitter.com/left_pad/status/927554660508028929&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;preset-env-usebuiltins-usage&quot;&gt;preset-env: &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;useBuiltins&quot;: &quot;usage&quot;&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-preset-env&lt;/code&gt; introduced the idea of compiling syntax to different targets and via the &lt;code class=&quot;highlighter-rouge&quot;&gt;useBuiltIns&lt;/code&gt; option, the ability to also only add polyfills that the targets don’t support.&lt;/p&gt;
+
+&lt;p&gt;So with this option, something like:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;babel-polyfill&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Can turn into&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;core-js/modules/es7.string.pad-start&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;core-js/modules/es7.string.pad-end&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;if the target environment happens to support polyfills other than &lt;code class=&quot;highlighter-rouge&quot;&gt;padStart&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;padEnd&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;However in order to make that even better, we should only import polyfills that are “used” in the codebase itself. Why even import &lt;code class=&quot;highlighter-rouge&quot;&gt;padStart&lt;/code&gt; if it’s not even used in the code?&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;useBuiltins&quot;: &quot;usage&quot;&lt;/code&gt; is our first attempt to begin that idea. It does an import at the top of each file but only adds the import if it finds it used in the code. This approach means that we can import the minimum amount of polyfills necessary for the app (and only if the target environment doesn’t support it).&lt;/p&gt;
+
+&lt;p&gt;So if you use &lt;code class=&quot;highlighter-rouge&quot;&gt;Promise&lt;/code&gt; in your code, it will import it at the top of the file (if your target doesn’t support it). Bundlers will dedupe the file if it’s the same so this approach won’t cause multiple polyfills to be imported.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;core-js/modules/es6.promise&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;core-js/modules/es7.array.includes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;includes&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;includes&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;With type inference we can know if an instance method like &lt;code class=&quot;highlighter-rouge&quot;&gt;.includes&lt;/code&gt; is for an array or not, and having a false positive is ok until that logic is better since it’s still better than importing the whole polyfill like before.&lt;/p&gt;
+
+&lt;h3 id=&quot;misc-updates&quot;&gt;Misc Updates&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/blob/master/packages/babel-template&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-template&lt;/code&gt;&lt;/a&gt; is faster/easier to use&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/regenerator&quot;&gt;regenerator&lt;/a&gt; was released under the &lt;a href=&quot;https://twitter.com/left_pad/status/938825429955125248&quot;&gt;MIT License&lt;/a&gt; - it’s the dependency used to compile generators/async&lt;/li&gt;
+  &lt;li&gt;“lazy” option to the &lt;code class=&quot;highlighter-rouge&quot;&gt;modules-commonjs&lt;/code&gt; plugin via &lt;a href=&quot;https://github.com/babel/babel/pull/6952&quot;&gt;#6952&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;You can now use &lt;code class=&quot;highlighter-rouge&quot;&gt;envName: &quot;something&quot;&lt;/code&gt; in .babelrc or pass via cli &lt;code class=&quot;highlighter-rouge&quot;&gt;babel --envName=something&lt;/code&gt; instead of having to use &lt;code class=&quot;highlighter-rouge&quot;&gt;process.env.BABEL_ENV&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;process.env.NODE_ENV&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[&quot;transform-for-of&quot;, { &quot;assumeArray&quot;: true }]&lt;/code&gt; to make all for-of loops output as regular arrays&lt;/li&gt;
+  &lt;li&gt;Exclude &lt;code class=&quot;highlighter-rouge&quot;&gt;transform-typeof-symbol&lt;/code&gt; in loose mode for preset-env &lt;a href=&quot;https://github.com/babel/babel/pull/6831&quot;&gt;#6831&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://twitter.com/left_pad/status/942859244759666691&quot;&gt;Landed PR for better error messages with syntax errors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;todos-before-release&quot;&gt;Todos Before Release&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/6766&quot;&gt;Handle &lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt; lookup&lt;/a&gt; (want this done before first RC release)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/pull/7091&quot;&gt;“overrides” support&lt;/a&gt;: different config based on glob pattern&lt;/li&gt;
+  &lt;li&gt;Caching and invalidation logic in babel-core.&lt;/li&gt;
+  &lt;li&gt;Better story around external helpers.&lt;/li&gt;
+  &lt;li&gt;Either implement or have plan in place for versioning and handling polyfills independently from helpers, so we aren’t explicitly tied to core-js 2 or 3, since people may have things that depend on one or the other and won’t want to load both a lot of the time.&lt;/li&gt;
+  &lt;li&gt;Either a &lt;a href=&quot;https://github.com/babel/babel/pull/6107&quot;&gt;working decorator implementation&lt;/a&gt;, or functional legacy implementation, with clear path to land current spec behavior during 7.x’s lifetime.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;thanks&quot;&gt;Thanks&lt;/h3&gt;
+
+&lt;p&gt;Shoutout to our team of volunteers: &lt;a href=&quot;https://twitter.com/loganfsmyth&quot;&gt;Logan&lt;/a&gt; who has been really pushing hard to fix a lot of our core issues regarding configs and more and the one doing all of that hard work, &lt;a href=&quot;https://twitter.com/existentialism&quot;&gt;Brian&lt;/a&gt; who has been taking over maintainence of a lot of preset-env work and just whatever I was doing before 😛, and &lt;a href=&quot;https://twitter.com/TschinderDaniel&quot;&gt;Daniel&lt;/a&gt; who has always been stepping in when we need the help whether it be maintaining babel-loader or helping move the babylon/babel-preset-env repo’s over. And same with &lt;a href=&quot;https://twitter.com/NicoloRibaudo&quot;&gt;Nicolo&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/svensauleau&quot;&gt;Sven&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/yavorsky_&quot;&gt;Artem&lt;/a&gt;, and &lt;a href=&quot;https://twitter.com/kovnsk&quot;&gt;Diogo&lt;/a&gt; for stepping up in the last year to help out.&lt;/p&gt;
+
+&lt;p&gt;I’m really looking forward to a release (I’m tired too; it’s almost been a year 😝), but also don’t want to rush anything just because! Been a lot of ups and downs throughout this release but I’ve certainly learned a lot and I’m sure the rest of the team has as well.&lt;/p&gt;
+
+&lt;p&gt;And if I’ve learned anything at all this year, I should really heed this advice rather than just write about it.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&amp;quot;Before you go maintaining anything else, maintain your own body first&amp;quot; - Mom 😸&lt;/p&gt;&amp;mdash; Henry Zhu (@left_pad) &lt;a href=&quot;https://twitter.com/left_pad/status/944313617243099136?ref_src=twsrc%5Etfw&quot;&gt;December 22, 2017&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Also thanks to &lt;a href=&quot;https://twitter.com/kosamari&quot;&gt;Mariko&lt;/a&gt; for the &lt;a href=&quot;https://twitter.com/kosamari/status/944272286055530496&quot;&gt;light push&lt;/a&gt; to actually finish this post (2 months in the making)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 27 Dec 2017 21:00:00 +0000</pubDate>
+        <link>https://babeljs.cn/blog/2017/12/27/nearing-the-7.0-release.html</link>
+        <guid isPermaLink="true">https://babeljs.cn/blog/2017/12/27/nearing-the-7.0-release.html</guid>
+        
+        
+        <category>announcements</category>
+        
+      </item>
     
       <item>
         <title>Babel Turns Three</title>
@@ -2359,723 +2669,6 @@ If you import a Babel package in a library you may need to use &lt;code class=&q
         <pubDate>Mon, 13 Feb 2017 20:00:00 +0000</pubDate>
         <link>https://babeljs.cn/blog/2017/02/13/6.23.0.html</link>
         <guid isPermaLink="true">https://babeljs.cn/blog/2017/02/13/6.23.0.html</guid>
-        
-        
-        <category>announcements</category>
-        
-      </item>
-    
-      <item>
-        <title>The State of Babel</title>
-        <description>&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/blog/2016/12/07/the-state-of-babel#some-history&quot;&gt;Some History&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/blog/2016/12/07/the-state-of-babel#current-status&quot;&gt;Current Status&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/blog/2016/12/07/the-state-of-babel#the-future&quot;&gt;The Future&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/blog/2016/12/07/the-state-of-babel#community&quot;&gt;Community&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Previous issues: &lt;a href=&quot;https://github.com/babel/babel/issues/4130&quot;&gt;Babel Roadmap #4130&lt;/a&gt;, &lt;a href=&quot;https://github.com/babel/babel/issues/2168&quot;&gt;6.0 #2168&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Please check out the &lt;a href=&quot;https://babeljs.io/blog/2016/12/07/the-state-of-babel#community&quot;&gt;Community&lt;/a&gt; section if nothing else.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Also published as part of &lt;a href=&quot;https://twitter.com/kosamari&quot;&gt;Mariko Kosaka’s&lt;/a&gt; 2016 &lt;a href=&quot;http://web.advent.today/&quot;&gt;Web Advent Calendar&lt;/a&gt;!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;some-history&quot;&gt;Some History&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/kittens&quot;&gt;Sebastian&lt;/a&gt; created “6to5” in September of 2014. Interestingly enough, he made it to scratch an itch he had with understanding programming languages and how they work. You might have assumed whoever created the project already knew how compilers worked and understood JavaScript perfectly… but you would be wrong! Check out his post for a great read of his story: &lt;a href=&quot;https://medium.com/@sebmck/2015-in-review-51ac7035e272#.jdoo279bl&quot;&gt;~2015 in Review&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;6to5 did exactly that: easily turn ES6 code into ES5 code. When 6to5 became Babel as mentioned in &lt;a href=&quot;https://babeljs.io/blog/2015/02/15/not-born-to-die&quot;&gt;Not Born to Die&lt;/a&gt;, it became a platform: a suite of tools designed to create the next generation of JavaScript tooling. No longer did it just compile ES6 to ES5, it allowed developers to build tools on top of it.&lt;/p&gt;
-
-&lt;p&gt;Here are some of our milestones:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In &lt;a href=&quot;https://babeljs.io/blog/2015/03/31/5.0.0&quot;&gt;5.0.0&lt;/a&gt;, Babel aligned more with the &lt;a href=&quot;https://tc39.github.io/process-document/&quot;&gt;TC39 process&lt;/a&gt; by introducing &lt;code class=&quot;highlighter-rouge&quot;&gt;stages&lt;/code&gt;, added a &lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt; config option, and created a plugin system for custom transforms.&lt;/li&gt;
-  &lt;li&gt;In &lt;a href=&quot;https://babeljs.io/blog/2015/10/29/6.0.0&quot;&gt;6.0.0&lt;/a&gt;, Babel became modular (a pretty controversial idea at the time). This was a huge change that led to opt-in functionality (no defaults) and the concept of &lt;code class=&quot;highlighter-rouge&quot;&gt;Presets&lt;/code&gt; and Plugin Options.
-    &lt;ul&gt;
-      &lt;li&gt;As mentioned in his article, Sebastian joined Facebook in July 2015 and worked on the entire development of Babel 6 on company time.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/blob/master/CHANGELOG.md#638-6313&quot;&gt;6.3.13&lt;/a&gt; Sebastian extracted our &lt;a href=&quot;https://github.com/babel/babel/blob/master/doc/design/monorepo.md&quot;&gt;monorepo&lt;/a&gt; build/publish tools into what is now &lt;a href=&quot;https://github.com/lerna/lerna&quot;&gt;Lerna&lt;/a&gt;. (What’s funny is &lt;a href=&quot;https://github.com/thejameskyle&quot;&gt;James&lt;/a&gt; rewrote it 3 times and I had to review everything)
-    &lt;ul&gt;
-      &lt;li&gt;After this was around when both Sebastian and James got burned out on Babel, and a few contributors stepped up.&lt;/li&gt;
-      &lt;li&gt;We struggled to find direction and deal with the bugs/requests coming in but we got a lot of stuff done!&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/releases/tag/v6.13.0&quot;&gt;6.13.0&lt;/a&gt; finally added &lt;a href=&quot;http://babeljs.io/docs/plugins/#plugin-preset-options&quot;&gt;Preset Options&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://babeljs.io/blog/2016/08/24/6.14.0&quot;&gt;6.14.0&lt;/a&gt; added a &lt;a href=&quot;http://babeljs.io/docs/plugins/preset-latest/&quot;&gt;latest-preset&lt;/a&gt; that keeps up to date with the yearly JavaScript specification.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://babeljs.io/blog/2016/09/28/6.16.0&quot;&gt;6.16.0&lt;/a&gt; allowed changing out the parser or code-generator.&lt;/li&gt;
-  &lt;li&gt;In August, we released &lt;a href=&quot;https://babeljs.io/blog/2016/08/30/babili&quot;&gt;Babili, a minifier based on Babel&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;In September, we released the first version of &lt;a href=&quot;https://github.com/babel/babel-preset-env&quot;&gt;babel-preset-env&lt;/a&gt; (read on for details).&lt;/li&gt;
-  &lt;li&gt;After a year on &lt;a href=&quot;https://twitter.com/sebmck/status/667097915605708804&quot;&gt;Phabricator&lt;/a&gt;, we moved back to to &lt;a href=&quot;https://twitter.com/left_pad/status/773619871074648064&quot;&gt;GitHub issues&lt;/a&gt; thanks solely to &lt;a href=&quot;https://github.com/danez&quot;&gt;@danez&lt;/a&gt; and his amazing (and underappreciated) work.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If you’re using Babel, let us know with a &lt;a href=&quot;https://github.com/babel/babel.github.io/pulls?utf8=%E2%9C%93&amp;amp;q=is%3Apr+is%3Aclosed+%22New+User%3A%22&quot;&gt;PR&lt;/a&gt; to our &lt;a href=&quot;http://babeljs.io/users/&quot;&gt;users page&lt;/a&gt;!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Now &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-core&lt;/code&gt; is downloaded over 5 million times per month and almost 60 million times total and used at huge companies like Facebook/Netflix/Airbnb and other OSS projects like React/Yarn.&lt;/p&gt;
-
-&lt;p&gt;Thanks everyone for your continued support! We want to continue acting as the foundation of the JavaScript toolchain: compilation, linting, minification, codemods, code coverage, etc.&lt;/p&gt;
-
-&lt;h2 id=&quot;current-status&quot;&gt;Current Status&lt;/h2&gt;
-
-&lt;p&gt;If you’re interested in helping out please check out the issues linked below!&lt;/p&gt;
-
-&lt;h3 id=&quot;maintaining-babel-plugins-for-each-proposal-in-tc39-starting-from-stage-0&quot;&gt;Maintaining Babel plugins &lt;a href=&quot;https://github.com/tc39/proposals&quot;&gt;for each proposal in TC39&lt;/a&gt; starting from Stage 0&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/tc39&quot;&gt;TC39&lt;/a&gt; stands for Ecma International, Technical Committee 39: it’s the committee that makes JavaScript.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/b0rk&quot;&gt;@b0rk&lt;/a&gt; Short answers:&lt;br /&gt;&lt;br /&gt;Who&amp;#39;s there? Engine implementors, developers, a handful of academics and theorists, and &lt;a href=&quot;https://twitter.com/BrendanEich&quot;&gt;@BrendanEich&lt;/a&gt;.&lt;/p&gt;&amp;mdash; Yehuda Katz (@wycats) &lt;a href=&quot;https://twitter.com/wycats/status/803821500394598401&quot;&gt;November 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Babel uses &lt;a href=&quot;http://babeljs.io/docs/plugins/#stage-x-experimental-presets-&quot;&gt;TC39’s concept of stages&lt;/a&gt; to categorize its experimental plugins. Users should be able to easily use features before they are all implemented in browsers in &lt;a href=&quot;https://tc39.github.io/process-document/&quot;&gt;stage 4 of the TC39 process&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Babel is fundamental in the process given its place in the ecosystem: it is significantly easier for a developer to update a &lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt; file than a browser flag and much faster to write a Babel plugin than to implement the feature natively in the browser. This is the core of Babel.&lt;/p&gt;
-
-&lt;p&gt;But the proposals process involves significant iteration: proposals can change in syntax or even get dropped. Because TC39 meets every 2 months, plugins should be updated as least as often as each change in stage so that users can be in sync.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Early feedback to the proposal champion and committee is extremely valuable although it is recommended to use Stage 0/1/2 features with caution.
-Although companies like Facebook take advantage of these kinds of features, they have created codemods to allow easy change.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;There isn’t enough time or resources to maintain each plugin, especially when there are spec updates.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Some transforms are simply out of date such as decorators. Logan had to port the previous spec &lt;a href=&quot;https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy&quot;&gt;babel-plugin-transform-decorators-legacy&lt;/a&gt; for Babel 6 and we haven’t had anyone able to rewrite it for the updated spec.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/pull/3473&quot;&gt;babel/babel#3473 - Async iteration proposal&lt;/a&gt; wasn’t merged for so long because we just didn’t have time to review it. By the time it was merged it had already moved
-from stage 2 to stage 3.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Next we’re going to be working with:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/littledan&quot;&gt;Daniel Ehrenberg&lt;/a&gt; on &lt;a href=&quot;https://github.com/tc39/proposal-private-fields&quot;&gt;Private Fields (Stage 2)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/wycats&quot;&gt;Yehuda Katz&lt;/a&gt; on &lt;a href=&quot;http://tc39.github.io/proposal-decorators/&quot;&gt;Class and Property Decorators (Stage 2)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mathiasbynens.be/&quot;&gt;Mathias Bynens&lt;/a&gt; on &lt;a href=&quot;https://github.com/tc39/proposal-regexp-unicode-property-escapes&quot;&gt;Unicode Property Escapes in Regular Expressions (Stage 2)&lt;/a&gt; via &lt;a href=&quot;https://github.com/babel/babel/pull/3683&quot;&gt;babel/babel#3683&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Should we create a codemod for Stage X proposals at the same time as creating the actual transform?&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/4408&quot;&gt;Private Fields&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/2645&quot;&gt;Decorators Proposal&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Check out &lt;a href=&quot;https://thefeedbackloop.xyz/tc39-november-2016-day-1/&quot;&gt;thefeedbackloop.xyz&lt;/a&gt; for more info on TC39!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;maintaining-other-ecosystem-plugins-jsxflow&quot;&gt;Maintaining other ecosystem plugins: JSX/Flow&lt;/h3&gt;
-
-&lt;p&gt;Babel is vital to the &lt;a href=&quot;https://reactjs.org&quot;&gt;React&lt;/a&gt; and &lt;a href=&quot;https://flowtype.org/&quot;&gt;Flow&lt;/a&gt; ecosystems, and we work closely with the relevant teams at Facebook.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/docs/plugins/#react&quot;&gt;React plugins&lt;/a&gt;, &lt;a href=&quot;https://babeljs.io/docs/plugins/preset-react/&quot;&gt;React preset&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;These cover the main &lt;code class=&quot;highlighter-rouge&quot;&gt;JSX&lt;/code&gt; transform, development plugins, and optimizations.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://babeljs.io/docs/plugins/transform-flow-strip-types&quot;&gt;Flow plugin&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Relevant Issue Labels:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues?utf8=%E2%9C%93&amp;amp;q=is%3Aissue%20is%3Aopen%20label%3A%22react%22%20&quot;&gt;babel/babel: React issues&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/react/labels/Component%3A%20Optimizing%20Compiler&quot;&gt;facebook/react: Optimizing Compiler&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;babel-preset-env-autoprefixer-for-babel&quot;&gt;&lt;a href=&quot;https://github.com/babel/babel-preset-env&quot;&gt;babel-preset-env&lt;/a&gt; (“autoprefixer” for Babel)&lt;/h3&gt;
-
-&lt;p&gt;JavaScript compilation is a moving target: There are yearly updates to the spec, browser vendors are constantly updating to that spec, and users may drop support for earlier browsers. At first glance, there doesn’t seem to be a fixed target for what we should compile our JavaScript down to.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/588473/19214029/58deebce-8d48-11e6-9004-ee3fbcb75d8b.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The &lt;a href=&quot;https://github.com/kangax/&quot;&gt;compat-table&lt;/a&gt; is updated constantly and is used for this preset.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is where &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-preset-env&lt;/code&gt; comes in: it’s a Babel preset that automatically determines the correct Babel plugins to use based on the provided environments.&lt;/p&gt;
-
-&lt;p&gt;Its goal is both simplicity in use and efficiency in output: you only need to worry about your target environments to be able to take advantage of native code. The preset decides for you the required plugins.&lt;/p&gt;
-
-&lt;h4 id=&quot;some-example-configs&quot;&gt;Some example configs&lt;/h4&gt;
-
-&lt;p&gt;Targeting Chrome 55 + last 2 versions of other browsers via &lt;a href=&quot;https://github.com/ai/browserslist&quot;&gt;browserslist&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&quot;presets&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&quot;targets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&quot;chrome&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;55&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&quot;browsers&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;last 2 versions&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Targeting the current Node.js version (uses &lt;code class=&quot;highlighter-rouge&quot;&gt;process.versions.node&lt;/code&gt;)&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&quot;presets&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&quot;targets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&quot;node&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;current&quot;&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Chrome 55 &lt;code class=&quot;highlighter-rouge&quot;&gt;useBuiltIns&lt;/code&gt; + webpack 2&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&quot;presets&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;env&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&quot;targets&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s2&quot;&gt;&quot;chrome&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;55&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&quot;modules&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;s2&quot;&gt;&quot;useBuiltIns&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;In&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;babel-polyfill&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Out (different based on environment)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;core-js/modules/es7.string.pad-start&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;core-js/modules/es7.string.pad-end&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Next big feature: apply the same idea of preset-env to polyfills as well &lt;a href=&quot;https://github.com/babel/babel-preset-env/issues/20&quot;&gt;babel/babel-preset-env#20&lt;/a&gt; with corresponding PR in &lt;a href=&quot;https://github.com/babel/babel-preset-env/pull/56&quot;&gt;babel/babel-preset-env#56&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel-preset-env/issues/26&quot;&gt;Using browserslist&lt;/a&gt; and &lt;a href=&quot;https://github.com/babel/babel-preset-env/pull/51&quot;&gt;PR&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ai/browserslist/issues/75&quot;&gt;“Node.js versions support” in Browserlist&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kangax/compat-table/issues/711&quot;&gt;Publish runnable tests &amp;amp; browser data to npm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;linting-via-babel-eslint&quot;&gt;Linting via &lt;a href=&quot;https://github.com/babel/babel-eslint&quot;&gt;babel-eslint&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;&lt;img class=&quot;img-responsive&quot; alt=&quot;example of eslint&quot; src=&quot;/images/blog/2016-12-07-the-state-of-babel/eslint.png&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ESLint doesn’t support new language features until they reach Stage 4 of the proposals process. For this reason we maintain &lt;a href=&quot;https://github.com/babel/babel-eslint&quot;&gt;babel-eslint&lt;/a&gt; (a custom ESLint parser) so you can continue to lint JavaScript with experimental syntax.&lt;/p&gt;
-
-&lt;p&gt;This project was one of the hardest projects to work on: because it is just a compatibility layer between Babel and ESLint there is inherently a constant need for updates when either projects update and a high risk of unexpected changes due to monkey-patching. It was unfortunate to get issues like &lt;a href=&quot;https://github.com/babel/babel-eslint/issues/243&quot;&gt;babel/babel-eslint#243&lt;/a&gt; or &lt;a href=&quot;https://github.com/babel/babel-eslint/issues/267&quot;&gt;babel/babel-eslint#267&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;To that end, we’d like to lessen the maintenance burden of this project by improving our scope and traversal interop with ESLint. It might even be interesting to be able to write ESLint rules using babel APIs or vice versa?&lt;/p&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/1829&quot;&gt;Previous Linting APIs Discussion&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel-eslint/issues/62&quot;&gt;Running smoke tests on ESLint&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel-eslint/issues/88&quot;&gt;babel/babel-eslint#88&lt;/a&gt; is still relevant now&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;minification&quot;&gt;Minification&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/babel/babili&quot;&gt;Babili&lt;/a&gt; is our new Babel-powered minifier, enabling you to produce minified code while targeting the latest browsers.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;In&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Mangler&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;program&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Mangler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Out&lt;/strong&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// ES2015 code -&amp;gt; Babili -&amp;gt; Minified ES2015 Code&lt;/span&gt;
-&lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Check out our &lt;a href=&quot;http://babeljs.io/blog/2016/08/30/babili&quot;&gt;blog post&lt;/a&gt; for more info.&lt;/p&gt;
-
-&lt;p&gt;Since it was recently released, we’re looking for some new contributors! There’s a lot of small bugs and things that could be improved for those looking for a new project to help out with!&lt;/p&gt;
-
-&lt;h3 id=&quot;codemods--refactoring--eslint---fix&quot;&gt;Codemods / Refactoring / &lt;code class=&quot;highlighter-rouge&quot;&gt;eslint --fix&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;A &lt;code class=&quot;highlighter-rouge&quot;&gt;codemod&lt;/code&gt; is a tool-assisted code modification; a fancy find-and-replace.&lt;/p&gt;
-
-&lt;p&gt;If you wanted to change &lt;code class=&quot;highlighter-rouge&quot;&gt;merge({})&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;Object.assign({})&lt;/code&gt; (and maybe later &lt;a href=&quot;https://github.com/sebmarkbage/ecmascript-rest-spread&quot;&gt;object rest&lt;/a&gt;) you might do a regex replace. But you don’t want to replace the other parts of the code that also might be called &lt;code class=&quot;highlighter-rouge&quot;&gt;merge&lt;/code&gt; such as imports/exports, strings, comments, and local variables. To do it safely you’ll want something more powerful that only changes the specific code you need.&lt;/p&gt;
-
-&lt;p&gt;Although Babel already handles transforming code into other code, it doesn’t really care about the styling of the input code as a compiler. After using Babel with its default options to do a codemod, &lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt; looks really messy.&lt;/p&gt;
-
-&lt;p&gt;Enter &lt;a href=&quot;https://github.com/benjamn/recast&quot;&gt;Recast&lt;/a&gt;: a tool that preserves the formatting of unmodified code while also pretty-printing any new AST nodes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/588473/16584612/04a82078-428b-11e6-9f79-a665eef848ea.gif&quot; alt=&quot;recast&quot; /&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;In the screenshot above, the top-left pane is the input code and the bottom-right pane is the output code after the babel plugin is run. In this case it’s preserving the whitespace of the input code when possible.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;By passing in &lt;a href=&quot;https://github.com/benjamn/recast&quot;&gt;Recast&lt;/a&gt; in the options, Babel can power the future of codemods.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&quot;parserOpts&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&quot;parser&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;recast&quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-  &lt;span class=&quot;s2&quot;&gt;&quot;generatorOpts&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;s2&quot;&gt;&quot;generator&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;recast&quot;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Run the relevant Babel transform(s) on the source code and overwrite it:&lt;/p&gt;
-
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;babel src -d src
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This feature was just made possible so we’re looking forward to making it easier to use and seeing the transformations it can enable. Check out the &lt;a href=&quot;https://babeljs.io/blog/2016/09/28/6.16.0#-new-feature&quot;&gt;6.16.0 blog post&lt;/a&gt; for more info!&lt;/p&gt;
-
-&lt;p&gt;Other relevant projects: &lt;a href=&quot;https://github.com/facebook/jscodeshift&quot;&gt;JSCodeshift&lt;/a&gt;, &lt;a href=&quot;https://github.com/cpojer/js-codemod&quot;&gt;js-codemod&lt;/a&gt;, &lt;a href=&quot;https://github.com/lebab/lebab&quot;&gt;Lebab&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/lebab/lebab/issues/138&quot;&gt;Rewriting Lebab as a Babel transformer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/facebook/jscodeshift/issues/168&quot;&gt;Babel integration with jscodeshift&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;code-coverage--instrumentation&quot;&gt;Code Coverage / Instrumentation&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://istanbul.js.org/assets/browser.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We want to support tools like &lt;a href=&quot;https://github.com/istanbuljs/nyc&quot;&gt;nyc&lt;/a&gt; and &lt;a href=&quot;https://github.com/istanbuljs/babel-plugin-istanbul&quot;&gt;babel-plugin-istanbul&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;plugin-ecosystem&quot;&gt;Plugin Ecosystem&lt;/h3&gt;
-
-&lt;p&gt;Thanks to our vibrant community, new plugins are constantly being created: whether it be a new way to write your &lt;a href=&quot;https://github.com/zeit/styled-jsx&quot;&gt;css in jsx&lt;/a&gt; or &lt;a href=&quot;https://github.com/speedskater/babel-plugin-rewire&quot;&gt;rewire your tests&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Currently there are &amp;gt; 1200 &lt;a href=&quot;https://www.npmjs.com/search?q=babel-plugin-&quot;&gt;babel-plugins on npm&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We’ve had some interesting discussions on how we can grow and support the plugin ecosystem. We could try to watch all the repos but that is obviously overwhelming.&lt;/p&gt;
-
-&lt;p&gt;It might be interesting to create some bots to automate a few tasks: create specific Babel plugins/ESLint rules for babel-plugins, write codemods to update API changes, and integrate plugins into our smoke test.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-conversation=&quot;none&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/jaredforsyth&quot;&gt;@jaredforsyth&lt;/a&gt; &lt;a href=&quot;https://twitter.com/reactjs&quot;&gt;@reactjs&lt;/a&gt; My five minute POC ☺️ &lt;a href=&quot;https://t.co/v74UFHsSJG&quot;&gt;https://t.co/v74UFHsSJG&lt;/a&gt; &lt;a href=&quot;https://t.co/B3YwVWkH5g&quot;&gt;pic.twitter.com/B3YwVWkH5g&lt;/a&gt;&lt;/p&gt;&amp;mdash; Henry Zhu (@left_pad) &lt;a href=&quot;https://twitter.com/left_pad/status/805971589430968320&quot;&gt;December 6, 2016&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Should we create a newsletter for new/useful plugins?&lt;/li&gt;
-  &lt;li&gt;How can we teach people about plugins and how to write them?&lt;/li&gt;
-  &lt;li&gt;How can we make &lt;a href=&quot;http://astexplorer.net/&quot;&gt;ASTExplorer&lt;/a&gt; better?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;documentation-this-website&quot;&gt;Documentation (this website!)&lt;/h3&gt;
-
-&lt;p&gt;Docs contributions have definitely been lacking in the &lt;a href=&quot;https://github.com/babel/babel.github.io/graphs/contributors&quot;&gt;last year&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;However just recently we’ve done a lot of awesome stuff:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Daniel15&quot;&gt;@Daniel15&lt;/a&gt; has been maintaining &lt;a href=&quot;https://github.com/babel/babel-standalone&quot;&gt;babel-standalone&lt;/a&gt; which we use in the REPL and has some automation when new releases get out.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/maxiloc&quot;&gt;@maxiloc&lt;/a&gt; added search functionality via Algolia via &lt;a href=&quot;https://github.com/babel/babel.github.io/pull/977&quot;&gt;#977&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We’ve also added new collaborators:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/STRML&quot;&gt;@STRML&lt;/a&gt;: Added Discourse to all github pages via &lt;a href=&quot;https://github.com/babel/babel.github.io/pull/875&quot;&gt;#875&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/xtuc&quot;&gt;@xtuc&lt;/a&gt;: Added support for reading the README from the babel repo so we don’t have to sync 2 copies of docs via &lt;a href=&quot;https://github.com/babel/babel.github.io/pull/990&quot;&gt;#990&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fredericmarx&quot;&gt;@fredericmarx&lt;/a&gt;: Added support for a copy to clipboard button for code snippets via &lt;a href=&quot;https://github.com/babel/babel.github.io/pull/998&quot;&gt;#998&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/seedofjoy&quot;&gt;@seedofjoy&lt;/a&gt;: Added a resize ability for the REPL via &lt;a href=&quot;https://github.com/babel/babel.github.io/pull/1003&quot;&gt;#1003&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Some Ideas&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;All plugins should have examples. Can also embed &lt;a href=&quot;https://runkit.com/home&quot;&gt;RunKit&lt;/a&gt; or the REPL.&lt;/li&gt;
-  &lt;li&gt;Update FAQ with common errors&lt;/li&gt;
-  &lt;li&gt;API docs / make &lt;a href=&quot;https://github.com/thejameskyle/babel-handbook&quot;&gt;babel-handbook&lt;/a&gt; better&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel.github.io/issues/930&quot;&gt;Reorganizing the docs layout&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel.github.io/issues/831&quot;&gt;Showcase community plugins&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel.github.io/issues/27&quot;&gt;Adding a resources page&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel.github.io/issues/994&quot;&gt;Learn ES2015: teach others about ES2015+&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel.github.io/issues/59&quot;&gt;REPL: adding example dropdowns&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel.github.io/issues/92&quot;&gt;REPL: supporting all options&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel.github.io/issues/858&quot;&gt;REPL: allow the REPL to import any community plugin from npm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fkling/astexplorer/issues/70&quot;&gt;REPL: Use ASTexplorer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fkling/astexplorer/issues/166&quot;&gt;ASTexplorer: Real Time collaboration&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;the-future&quot;&gt;The Future&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;NOTE: Everything below can be changed or dropped. Some might be already in the works and others are just suggestions that need a proper discussion/champion.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Priority should be determined on what the community needs: not because it would be nice to have.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;plugin-api-changes&quot;&gt;&lt;a href=&quot;https://github.com/babel/notes/blob/master/2016/2016-08/august-01.md#potential-api-changes-for-traversal&quot;&gt;Plugin API Changes&lt;/a&gt;&lt;/h3&gt;
-
-&lt;p&gt;There is a lot of confusion around how plugins/presets interact regarding ordering. This results in bugs and issues with the config which require users to place plugins before/after others in a non-intuitive way.&lt;/p&gt;
-
-&lt;p&gt;We’re currently discussing API changes that could reduce the confusion. However, since this is a fundamental change to the core of Babel, it might take a while to figure out the best approach.&lt;/p&gt;
-
-&lt;h3 id=&quot;versioning&quot;&gt;Versioning&lt;/h3&gt;
-
-&lt;p&gt;Since Babel 6 we’ve used a &lt;a href=&quot;https://github.com/lerna/lerna#how-it-works&quot;&gt;“fixed” mode of versioning&lt;/a&gt; via Lerna. This is what allows us to release multiple packages at the same time all under the same version (if that package changes). This is nice because you don’t have to manually set a version for each package but everything moves together. The only time this could cause an error is when one on the packages makes a breaking change: then every package also will bump major versions.&lt;/p&gt;
-
-&lt;p&gt;This is explained more in &lt;a href=&quot;https://github.com/babel/notes/blob/master/2016/2016-07/july-31.md#future-of-babels-release-process-and-its-ecosystem&quot;&gt;babel/notes&lt;/a&gt; but we still need to figure out the best plan of action for the project.&lt;/p&gt;
-
-&lt;p&gt;What happens when we need to update a Stage 0 spec to Stage 1 and it’s a breaking change to the parser? Are we just going to bump the major version, wait to batch some changes up, or figure out how to do it via multiple versions of plugins?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/4950&quot;&gt;Discussion Issue&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;changing-the-mindset-around-stage-x-presets&quot;&gt;Changing the Mindset Around Stage X Presets&lt;/h4&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;My rule of thumb on how I decide what future features to transpile:&lt;br /&gt;&amp;quot;Could I reasonably codemod this if it changes?&amp;quot;&lt;br /&gt;Don&amp;#39;t do it otherwise.&lt;/p&gt;&amp;mdash; Kent C. Dodds (@kentcdodds) &lt;a href=&quot;https://twitter.com/kentcdodds/status/803815749416456196&quot;&gt;November 30, 2016&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/4914&quot;&gt;Should we rename the stage x presets to explain more that they are “experimental”&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;speed&quot;&gt;Speed&lt;/h4&gt;
-
-&lt;p&gt;Performance is a feature! Other things can be more of a priority at times (bug fixes, spec compliancy, etc) but it’s still important in a few different aspects.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;How can we reduce the size/time of install, especially for a project with multiple packages? (this is helped by &lt;a href=&quot;https://yarnpkg.com&quot;&gt;yarn&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;How can we parse faster?&lt;/li&gt;
-  &lt;li&gt;How can we make faster plugins (and measure them individually)?&lt;/li&gt;
-  &lt;li&gt;How can we generate the transformed code faster?&lt;/li&gt;
-  &lt;li&gt;How can we generate code that runs fast in the browser (https://fhinkel.github.io/six-speed/)?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you to read the compiled output and see issues, then report it and ask for help in making a PR!&lt;/p&gt;
-
-&lt;p&gt;Previous Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/1486&quot;&gt;Speeeeed&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/pull/3283&quot;&gt;Amazing PR to improve babel-generator by @gzzhanghao&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;possible-typescript-support&quot;&gt;Possible TypeScript Support?&lt;/h3&gt;
-
-&lt;p&gt;Maybe Babel could learn to understand TypeScript syntax (like we do with Flow)? We could add a plugin to strip TypeScript types for better interop.&lt;/p&gt;
-
-&lt;p&gt;This would mean parsing TypeScript specific syntax and stripping it out. However TypeScript does have non-type syntax, so for things like &lt;code class=&quot;highlighter-rouge&quot;&gt;enum&lt;/code&gt; we will would have to discuss more.&lt;/p&gt;
-
-&lt;h3 id=&quot;use-type-information&quot;&gt;Use Type Information?&lt;/h3&gt;
-
-&lt;p&gt;Integrate with a type system such as Flow/TypeScript to make optimizations. This just means that Babel should be able to gain the knowledge through those tools that an identifier &lt;code class=&quot;highlighter-rouge&quot;&gt;arr&lt;/code&gt; is actually an &lt;code class=&quot;highlighter-rouge&quot;&gt;Array&lt;/code&gt; or not.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;There are a few plugins that actually do type checking: &lt;a href=&quot;https://github.com/codemix/babel-plugin-typecheck&quot;&gt;babel-plugin-typecheck&lt;/a&gt; and &lt;a href=&quot;https://github.com/gcanti/babel-plugin-tcomb&quot;&gt;babel-plugin-tcomb&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/653&quot;&gt;Previous Issue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;taking-in-a-dependency-graph--operate-multi-file&quot;&gt;Taking in a Dependency Graph / Operate Multi-file?&lt;/h3&gt;
-
-&lt;p&gt;Then we could integrate with other tools like Webpack better. This would allow cross file transformations or whole codebase optimizations. The main reason for this would be for the minifier (being able to remove properties based on checking the usage across the whole application) or for example providing errors for missing/invalid import/exports.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/4949&quot;&gt;Discussion Issue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;parser-errors&quot;&gt;Parser Errors&lt;/h3&gt;
-
-&lt;p&gt;Better error messages from the parser like in &lt;a href=&quot;http://elm-lang.org/blog/compiler-errors-for-humans&quot;&gt;Compiler Errors for Humans&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;babel-eslint@7.1.1: now adds the code frame when there&amp;#39;s a parser error! &lt;a href=&quot;https://t.co/yoxRpGXq5E&quot;&gt;pic.twitter.com/yoxRpGXq5E&lt;/a&gt;&lt;/p&gt;&amp;mdash; Henry Zhu (@left_pad) &lt;a href=&quot;https://twitter.com/left_pad/status/799388723896946692&quot;&gt;November 17, 2016&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;It is obvious that we all want to see helpful errors!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We can do better inference/guessing on user intention to prevent vague errors. Let us know in what cases that happens!&lt;/p&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babylon/pull/125&quot;&gt;#125 Better message when using &lt;code class=&quot;highlighter-rouge&quot;&gt;await&lt;/code&gt; in a non-async function&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babylon/issues/169&quot;&gt;#169 Better message for a syntax error when a plugin isn’t enabled&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babylon/issues/212&quot;&gt;#212 Better message for using super when not using a non-object method&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;babel-init&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-init&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;Basically a way to set up Babel more easily like &lt;a href=&quot;https://github.com/facebookincubator/create-react-app&quot;&gt;create-react-app&lt;/a&gt; does.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Set up a &lt;code class=&quot;highlighter-rouge&quot;&gt;.babelrc&lt;/code&gt; from scratch, prompt with questions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Possible Idea:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ask about target environments (browsers, node) and pass to &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-preset-env&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Ask about experimental features (add specific plugins)&lt;/li&gt;
-  &lt;li&gt;Update the &lt;code class=&quot;highlighter-rouge&quot;&gt;babel&lt;/code&gt; npm package to do something again: Make it the default/opt-in/opinionated &lt;code class=&quot;highlighter-rouge&quot;&gt;babel&lt;/code&gt; that Babel 5 was. It can default to using &lt;code class=&quot;highlighter-rouge&quot;&gt;env&lt;/code&gt; and say the &lt;code class=&quot;highlighter-rouge&quot;&gt;latest 2 browsers&lt;/code&gt; (without any config).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/3977&quot;&gt;CLI (babel init) command&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/4951&quot;&gt;Repurpose &lt;code class=&quot;highlighter-rouge&quot;&gt;babel&lt;/code&gt; npm package&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;run-tc39test262&quot;&gt;Run &lt;a href=&quot;https://github.com/tc39/test262&quot;&gt;tc39/test262&lt;/a&gt;&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;test262 tests conformance to the continually maintained draft future ECMAScript standard found at &lt;a href=&quot;http://tc39.github.io/ecma262/&quot;&gt;tc39.github.io/ecma262&lt;/a&gt;, together with any Stage 3 or later TC39 proposals. It is maintained by Tom Care (&lt;a href=&quot;https://github.com/tcare&quot;&gt;@tcare&lt;/a&gt;) with significant contributions from many in the ECMAScript community.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Running the official spec tests against Babel can make sure we comply to the spec or at least know when we don’t. We’ll want to figure out how to do filtering on things we can’t compile (proxy, TCO, etc) and set up an easy way to check failing tests and file issues and PRs for them.&lt;/p&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kangax/compat-table/issues/830&quot;&gt;Adding test262 to compat-table&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bakkot/test262-web-runner/&quot;&gt;Running test262 on the web&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;smokeintegration-tests&quot;&gt;Smoke/Integration Tests&lt;/h3&gt;
-
-&lt;p&gt;It would be useful to either have a reverse &lt;a href=&quot;https://greenkeeper.io&quot;&gt;Greenkeeper&lt;/a&gt; or to run tests with master branch of Babel so that we can catch any major regressions before any release (node has the &lt;a href=&quot;https://github.com/nodejs/citgm&quot;&gt;citgm project&lt;/a&gt; for this). In theory we would want to take the biggest open source projects that use Babel and run their tests.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/motiz88/babel-smoke-tests&quot;&gt;motiz88/babel-smoke-tests&lt;/a&gt; is a good start! It would also be great if there’s already something like this out there!&lt;/p&gt;
-
-&lt;h3 id=&quot;program-analysis&quot;&gt;Program Analysis&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Program_slicing&quot;&gt;Program Slicing&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There was a great talk by &lt;a href=&quot;https://twitter.com/inconshreveable&quot;&gt;Alan Shreve&lt;/a&gt; called &lt;a href=&quot;https://www.youtube.com/watch?v=dSqLt8BgbRQ&quot;&gt;“Idealized Commit Logs: Code Simplification via Program Slicing”&lt;/a&gt; which inspired @kentcdodds to try it out in JavaScript via &lt;a href=&quot;http://slides.com/kentcdodds/faster-javascript#/&quot;&gt;slice-js&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The general idea is that we have a lot of tools to help us write code but not a lot for helping us understand/read code. You can think of code-slicing as a form of targeted dead-code elimination.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/media-p.slid.es/uploads/55780/images/3189688/Screen_Shot_2016-11-02_at_11.46.25_PM.png&quot; alt=&quot;slice-js&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;A program slice basically cuts away from the source code the code that isn’t used for a test case that you run. If there are lots of if statements and loops that aren’t run during your usecase then it won’t show up in the program slice.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Semantic (AST aware) Grepping tool?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Similar to &lt;a href=&quot;http://www.graspjs.com/&quot;&gt;graspjs&lt;/a&gt;, I think it would be interesting to be able to do a find-replace with the input being an AST. It would allow us to create other analysis tools: the ability to find all IIFE’s in our code, the number of times a method is called, or even how many Classes we have in our codebase.&lt;/p&gt;
-
-&lt;h3 id=&quot;babel---settings&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel --settings&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;This command would print out all info (also when erroring). It would also include performance metrics on how long each plugin takes.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/2960&quot;&gt;Discussion Issue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;parser-unity&quot;&gt;Parser Unity&lt;/h3&gt;
-
-&lt;p&gt;There have also been some discussions around parser/AST unity, in &lt;a href=&quot;https://github.com/TheLarkInn/js-parser-discussions&quot;&gt;TheLarkInn/js-parser-discussions&lt;/a&gt; and previously with &lt;a href=&quot;https://github.com/estree/estree&quot;&gt;ESTree&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately with Babel 6, we have “forked” and have a few differences in &lt;a href=&quot;https://github.com/babel/babylon#output&quot;&gt;our AST&lt;/a&gt; than ESTree. Babel aims to support stage x features while other parsers may only want to support stage 4 features. We all might prioritize certain things more than others regarding spec compliancy, performance, stage x features, error messages, extensibility, releases, etc. However it’s important for us to be open to breaking changes that may lead to better interop and a better community.&lt;/p&gt;
-
-&lt;h3 id=&quot;sweetjs-interop&quot;&gt;Sweet.js Interop?&lt;/h3&gt;
-
-&lt;p&gt;Previous &lt;a href=&quot;https://github.com/babel/babel/issues/568#issuecomment-71716260&quot;&gt;issue&lt;/a&gt;. Maybe we can just figure out how to have better interop instead?&lt;/p&gt;
-
-&lt;h3 id=&quot;nodejs-support&quot;&gt;Node.js Support&lt;/h3&gt;
-
-&lt;p&gt;Should we drop support according to the EOL of Node.js versions? How long should we wait to do this in general?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Do we want to continue to support our users who haven’t updated yet?&lt;/li&gt;
-  &lt;li&gt;There are certain transforms/PRs that are blocked by this, due to tools that have also dropped older versions.&lt;/li&gt;
-  &lt;li&gt;Many other build-time projects like ESLint have done so already.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Are we going to make a major version just for this or plan out other changes in addition?&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/4315&quot;&gt;Discussion Issue&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;babel-5-to-6-transition--upgrade-paths&quot;&gt;Babel 5 to 6 transition / Upgrade Paths&lt;/h3&gt;
-
-&lt;p&gt;Babel 6 was really difficult for the community to upgrade to. The initial release was a bit rushed. Although we did have a &lt;a href=&quot;http://babeljs.io/blog/2015/10/29/6.0.0&quot;&gt;6.0 release post&lt;/a&gt;, a &lt;a href=&quot;http://babeljs.io/blog/2015/10/31/setting-up-babel-6&quot;&gt;setup guide&lt;/a&gt; soon after, a even a &lt;a href=&quot;http://babeljs.io/blog/2015/11/03/babel-doctor&quot;&gt;tool (now deprecated)&lt;/a&gt; to help with the transition it was still difficult for users to understand the changes.&lt;/p&gt;
-
-&lt;p&gt;There are still &lt;a href=&quot;https://libraries.io/npm/babel-core/usage&quot;&gt;a good amount of users on Babel 5&lt;/a&gt; that we don’t want to leave behind. What can we do to help them upgrade? What steps do we need to take in the future to make sure the same thing doesn’t happen with a Babel 7? Are there other projects/communities we should be reaching out to and helping?&lt;/p&gt;
-
-&lt;p&gt;Relevant Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ember-cli/ember-cli/issues/5015&quot;&gt;ember-cli Babel 6.0 Issue&lt;/a&gt; needs help!&lt;/li&gt;
-  &lt;li&gt;Any others?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;what-else&quot;&gt;What else?&lt;/h3&gt;
-
-&lt;p&gt;Anything else not already brought up here? Please send us a tweet &lt;a href=&quot;https://twitter.com/babeljs&quot;&gt;@babeljs&lt;/a&gt;, a message on our slack (join at &lt;a href=&quot;https://slack.babeljs.io&quot;&gt;https://slack.babeljs.io/&lt;/a&gt;, comment on this post, or create an discussion issue in our repo!)&lt;/p&gt;
-
-&lt;p&gt;Are there projects or communities we should partner with more? How can we make the contributing experience more welcome? What can we do to make the development process more transparent?&lt;/p&gt;
-
-&lt;h2 id=&quot;community&quot;&gt;Community&lt;/h2&gt;
-
-&lt;p&gt;Old Issues:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/1347&quot;&gt;Call for Contributors!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/babel/babel/issues/1888&quot;&gt;Being Prepared for Getting Hit by a Bus&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You might think that as &lt;a href=&quot;https://npm-stat.com/charts.html?package=babel-core&amp;amp;from=2015-02-07&amp;amp;to=2016-12-07&quot;&gt;a project gets more widely used&lt;/a&gt; that more people show up to help out. But like most OSS projects that aren’t backed by a company, there is a constant issue with maintenance and sustainability; people get burned out, move on to other cool projects, or get busy with work/family/etc.&lt;/p&gt;
-
-&lt;p&gt;Like James describes in &lt;a href=&quot;https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c&quot;&gt;Dear Javascript&lt;/a&gt;, the current Babel team is pretty small.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Babel isn’t a company, a special team at Facebook, or corporate-funded OSS project. It’s a community-driven effort currently held up by a few people and we want that to grow.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;So if you’re interested in contributing to a tool you use, we’re hoping this could be the one!&lt;/p&gt;
-
-&lt;h3 id=&quot;what-issues-should-i-look-at-or-contribute-to&quot;&gt;What issues should I look at or contribute to?&lt;/h3&gt;
-
-&lt;p&gt;Many of our projects have both &lt;a href=&quot;https://github.com/babel/babel/labels/beginner-friendly&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;beginner-friendly&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/babel/babel/labels/help-wanted&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;help-wanted&lt;/code&gt;&lt;/a&gt; labels. You can also check out &lt;a href=&quot;https://github.com/babel/babel/labels/discussion&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;discussion&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;team&quot;&gt;Team&lt;/h3&gt;
-
-&lt;p&gt;Our core team is:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/hzoo&quot;&gt;Henry Zhu, @hzoo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/loganfsmyth&quot;&gt;Logan Smyth, @loganfsmyth&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/danez&quot;&gt;Daniel Tschinder, @danez&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And just in the last 3 months a lot more collaborators:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/motiz88&quot;&gt;Moti Zilberman, @motiz88&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/danharper&quot;&gt;Dan Harper, @danharper&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kaicataldo&quot;&gt;Kai Cataldo, @kaicataldo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/DrewML&quot;&gt;Andrew Levine, @drewml&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/existentialism&quot;&gt;Brian Ng, @existentialism&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Kovensky&quot;&gt;Diogo Franco, @kovensky&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Babili core team:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kangax&quot;&gt;Juriy Zaytsev, @kangax&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/boopathi&quot;&gt;Boopathi Rajaa, @boopathi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;As mentioned above we have a lot of website collaborators:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/daniel15&quot;&gt;Daniel Lo Nigro, @daniel15&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/STRML&quot;&gt;Samuel Reed, @STRML&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/xtuc&quot;&gt;Sven SAULEAU, @xtuc&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fredericmarx&quot;&gt;Frederic Marx, @fredericmarx&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/seedofjoy&quot;&gt;Igor Mozharovsky, @seedofjoy&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Inactive but still a resource:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kittens&quot;&gt;Sebastian McKenzie, @kittens&lt;/a&gt; - Yarn&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/thejameskyle&quot;&gt;James Kyle, @thejameskyle&lt;/a&gt; - Flow/Yarn&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/amasad&quot;&gt;Amjad Masad, @amasad&lt;/a&gt; - &lt;a href=&quot;https://repl.it/&quot;&gt;repl.it&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jmm&quot;&gt;Jesse McCarthy, @jmm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;how-can-i-contact-the-team&quot;&gt;How can I contact the team?&lt;/h3&gt;
-
-&lt;h4 id=&quot;github&quot;&gt;GitHub&lt;/h4&gt;
-
-&lt;p&gt;For bug reports/PRs you can check our &lt;a href=&quot;https://github.com/babel/&quot;&gt;repositories&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h4 id=&quot;twitter&quot;&gt;Twitter&lt;/h4&gt;
-
-&lt;p&gt;You can ping us on Twitter with &lt;a href=&quot;https://twitter.com/babeljs&quot;&gt;@babeljs&lt;/a&gt; - or mention us individually.&lt;/p&gt;
-
-&lt;p&gt;I myself joined Twitter to be able to talk with users and help out. Being able to post new features and changelogs is really useful and can help give us feedback!&lt;/p&gt;
-
-&lt;h4 id=&quot;slack&quot;&gt;Slack&lt;/h4&gt;
-
-&lt;p&gt;We have a relatively active community on there!&lt;/p&gt;
-
-&lt;p&gt;You’ll find a lot of awesome community members willing to help such as &lt;a href=&quot;https://github.com/ljharb&quot;&gt;Jordan Harband, @ljharb&lt;/a&gt;, &lt;a href=&quot;https://github.com/kovensky&quot;&gt;Diogo Franco, @kovensky&lt;/a&gt;, &lt;a href=&quot;https://github.com/taion&quot;&gt;Jimmy Jia, @taion&lt;/a&gt;, &lt;a href=&quot;https://github.com/zloirock&quot;&gt;Denis Pushkarev, @zloirock&lt;/a&gt; and more!&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;If you haven&amp;#39;t joined our slack yet: please join at &lt;a href=&quot;https://t.co/h3m7l9jkrg&quot;&gt;https://t.co/h3m7l9jkrg&lt;/a&gt;. Check out development/plugins to see what&amp;#39;s up! &lt;a href=&quot;https://t.co/f1CKaV8G6G&quot;&gt;pic.twitter.com/f1CKaV8G6G&lt;/a&gt;&lt;/p&gt;&amp;mdash; Babel (@babeljs) &lt;a href=&quot;https://twitter.com/babeljs/status/793223871080136705&quot;&gt;October 31, 2016&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;If you just have questions join &lt;a href=&quot;https://babeljs.slack.com/messages/discussion/&quot;&gt;#discussion&lt;/a&gt; and if you want to help or listen in check out &lt;a href=&quot;https://babeljs.slack.com/messages/development/&quot;&gt;#development&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;We try not to discuss in private if there’s no need to: I myself usually post the issues/PRs I’m working on for people to review and talk about.&lt;/p&gt;
-
-&lt;h4 id=&quot;other&quot;&gt;Other&lt;/h4&gt;
-
-&lt;p&gt;How else can we interact with the community? Should we go and start meetups, go to conferences, or manage hackathons?&lt;/p&gt;
-
-&lt;p&gt;How can we make Babel sustainable? Should we setup a &lt;a href=&quot;https://opencollective.com/opensource&quot;&gt;Open Collective&lt;/a&gt; or seek a foundation? Should we pay for a &lt;a href=&quot;https://medium.com/open-collective/wanted-a-product-manager-for-open-source-projects-bf19bcd680f5#.awwsg684n&quot;&gt;project manager&lt;/a&gt;?&lt;/p&gt;
-
-&lt;p&gt;Let us know your thoughts! What do you want out of Babel?&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;See typos/issues? Please send a PR or comment on &lt;a href=&quot;https://github.com/babel/babel.github.io/pull/1014&quot;&gt;babel/babel.github.io#1014&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;If anything we want to let you know that many of us got our start with Babel in order to learn JavaScript rather than helping because we already knew it. Personally, I knew nothing about compilers and had just learned what ES6 was when I found the project. I got here because of a tiny bit of curiosity and &lt;a href=&quot;https://medium.com/@hzoo/ossthanks-some-thoughts-d0267706c2c6#.lcga2ggrw&quot;&gt;some encouragement from a lot of people&lt;/a&gt;. I want to carry that forward and hope that we can all succeed together.&lt;/p&gt;
-
-&lt;p&gt;Thanks so much for reading!&lt;/p&gt;
-
-&lt;p&gt;Henry Zhu (&lt;a href=&quot;https://github.com/hzoo&quot;&gt;@hzoo&lt;/a&gt;) (&lt;a href=&quot;https://twitter.com/left_pad&quot;&gt;@left_pad&lt;/a&gt;)&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Thanks to way too many folks for their review and thoughts: @DrewML, @mrjoelkemp, @kentcdodds, @existentialism, @jdalton, @gaearon, @nolanlawson, @jayphelps, @montogeek, @TheLarkInn, @jasonLaster, @benjamn, @addyosmani, @Daniel15, @loganfsmyth, @gr2m, @mathiasbynens, @chicoxyzzy, @bvaughn, @bcoe.&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Wed, 07 Dec 2016 14:30:00 +0000</pubDate>
-        <link>https://babeljs.cn/blog/2016/12/07/the-state-of-babel.html</link>
-        <guid isPermaLink="true">https://babeljs.cn/blog/2016/12/07/the-state-of-babel.html</guid>
         
         
         <category>announcements</category>
