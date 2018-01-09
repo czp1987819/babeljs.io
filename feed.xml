@@ -5,8 +5,8 @@
     <description>用于编写下一代 JavaScript 的编译器</description>
     <link>https://babeljs.cn/</link>
     <atom:link href="https://babeljs.cn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 07 Jan 2018 11:14:55 +0000</pubDate>
-    <lastBuildDate>Sun, 07 Jan 2018 11:14:55 +0000</lastBuildDate>
+    <pubDate>Tue, 09 Jan 2018 02:19:57 +0000</pubDate>
+    <lastBuildDate>Tue, 09 Jan 2018 02:19:57 +0000</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -2080,6 +2080,23 @@ If you import a Babel package in a library you may need to use &lt;code class=&q
 &lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gd&quot;&gt;- t.jSXIdentifier()
 &lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+ t.jsxIdentifier()
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;expression-field-removed-from-arrowfunctionexpression&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.expression&lt;/code&gt; field removed from &lt;code class=&quot;highlighter-rouge&quot;&gt;ArrowFunctionExpression&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;expression&lt;/code&gt; field was removed to eliminate two different sources of truth and needing plugins to manually keep them in sync. You can now simply check whether the function body is a &lt;code class=&quot;highlighter-rouge&quot;&gt;BlockStatement&lt;/code&gt; or not:&lt;/p&gt;
+
+&lt;div class=&quot;language-diff highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  return {
+    visitor: {
+      ArrowFunctionExpression({ node }) {
+&lt;span class=&quot;gd&quot;&gt;-       if (node.expression) {
+&lt;/span&gt;&lt;span class=&quot;gi&quot;&gt;+       if (node.body.type !== &quot;BlockStatement&quot;) {
+&lt;/span&gt;          // () =&amp;gt; foo;
+        }
+      }
+    }
+  };
+&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;tokens-removed&quot;&gt;Tokens removed&lt;/h3&gt;
