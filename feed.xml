@@ -5,8 +5,8 @@
     <description>用于编写下一代 JavaScript 的编译器</description>
     <link>https://babeljs.cn/</link>
     <atom:link href="https://babeljs.cn/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Jan 2018 09:36:49 +0000</pubDate>
-    <lastBuildDate>Sat, 13 Jan 2018 09:36:49 +0000</lastBuildDate>
+    <pubDate>Sat, 13 Jan 2018 15:29:20 +0000</pubDate>
+    <lastBuildDate>Sat, 13 Jan 2018 15:29:20 +0000</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -1183,21 +1183,32 @@ Also, as stages change over time then people who aren’t using shrinkwrap or ya
 
 &lt;p&gt;Here’s a real-world example of using &lt;a href=&quot;https://github.com/kentcdodds/preval.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt;&lt;/a&gt; to inline an SVG in &lt;a href=&quot;https://github.com/kentcdodds/glamorous-website&quot;&gt;a universal application&lt;/a&gt; built with &lt;a href=&quot;https://github.com/zeit/next.js&quot;&gt;Next.js&lt;/a&gt;:&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;preval&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'preval.macro'&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// search.js&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// this file runs in the browser&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;preval&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'preval.macro'&lt;/span&gt;
 &lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glamorous&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'glamorous'&lt;/span&gt;
 
-&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base64SearchSVG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;preval&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'path'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;svgString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFileSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;__dirname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'svgs/search.svg'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base64String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svgString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'base64'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base64String&lt;/span&gt;
-&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base64SearchSVG&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;preval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./search-svg'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// this will be transpiled to something like:&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// const base65SearchSVG = 'PD94bWwgdmVyc2lv...etc...')&lt;/span&gt;
 
 &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SearchBox&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;glamorous&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'algolia_searchbox'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;props&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;backgroundImage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;data:image/svg+xml;base64,${base64SearchSVG}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}))&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;// search-svg.js&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// this file runs at build-time only&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// because it's required using preval.require function, which is a macro!&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'path'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;svgPath&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;__dirname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'svgs/search.svg'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;svgString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFileSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svgPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base64String&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svgString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'base64'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base64String&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -1207,7 +1218,7 @@ Also, as stages change over time then people who aren’t using shrinkwrap or ya
   &lt;li&gt;It’s less explicit because there would be no &lt;code class=&quot;highlighter-rouge&quot;&gt;import preval from 'preval.macro'&lt;/code&gt; in the source code.&lt;/li&gt;
   &lt;li&gt;Have to add &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-preval&lt;/code&gt; to your babel configuration.&lt;/li&gt;
   &lt;li&gt;Need to update your ESLint config to allow for the &lt;code class=&quot;highlighter-rouge&quot;&gt;preval&lt;/code&gt; variable as a global.&lt;/li&gt;
-  &lt;li&gt;If you misconfigured &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-preval&lt;/code&gt; you’d get a cryptic error like: &lt;code class=&quot;highlighter-rouge&quot;&gt;Uncaught ReferenceError: preval is not defined&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;If you misconfigured &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-preval&lt;/code&gt; you’d get a cryptic &lt;strong&gt;runtime&lt;/strong&gt; error like: &lt;code class=&quot;highlighter-rouge&quot;&gt;Uncaught ReferenceError: preval is not defined&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;By using &lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt;, we don’t have any of those problems because:&lt;/p&gt;
@@ -1216,12 +1227,42 @@ Also, as stages change over time then people who aren’t using shrinkwrap or ya
   &lt;li&gt;The import is there and used explicitly.&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; needs to be added to your config, but only once, then you can use all the macros you’d like (even local macros!)&lt;/li&gt;
   &lt;li&gt;No need to update ESLint config because it’s explicit.&lt;/li&gt;
-  &lt;li&gt;If you misconfigure &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; then you’ll get &lt;a href=&quot;https://github.com/kentcdodds/babel-plugin-macros/blob/f7c9881ee22b19b3c53c93711af6a42895ba1c71/src/__tests__/__snapshots__/index.js.snap#L100&quot;&gt;a much more friendly error message&lt;/a&gt; that indicates what the actual problem is pointing you to documentation.&lt;/li&gt;
+  &lt;li&gt;If you misconfigure &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; then you’ll get &lt;a href=&quot;https://github.com/kentcdodds/babel-plugin-macros/blob/f7c9881ee22b19b3c53c93711af6a42895ba1c71/src/__tests__/__snapshots__/index.js.snap#L100&quot;&gt;a much more friendly &lt;strong&gt;compile time&lt;/strong&gt; error message&lt;/a&gt; that indicates what the actual problem is pointing you to documentation.&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;strong&gt;So what is it really? The TL;DR is that &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; is a simpler way to write and use Babel transforms.&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;There are already several &lt;a href=&quot;https://www.npmjs.com/browse/keyword/babel-plugin-macros&quot;&gt;published &lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt;&lt;/a&gt; you can use, including &lt;a href=&quot;https://github.com/kentcdodds/preval.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;preval.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/kentcdodds/codegen.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;codegen.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/dralletje/idx.macro&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;idx.macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/emotion-js/emotion/blob/master/docs/babel.md#babel-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;emotion/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/vinhlh/tagged-translations#via-babel-macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tagged-translations/macro&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/mattphillips/babel-plugin-console#macros&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-console/scope.macro&lt;/code&gt;&lt;/a&gt;, and &lt;a href=&quot;https://github.com/threepointone/glamor/pull/312&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;glamor&lt;/code&gt; 🔜&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;another-example&quot;&gt;Another example&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-macros&lt;/code&gt; is a way to have no config for non-syntax babel plugins. So many existing babel plugins could be implemented as a macro. Here’s another example of &lt;a href=&quot;https://github.com/mattphillips/babel-plugin-console&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;babel-plugin-console&lt;/code&gt;&lt;/a&gt; which exposes &lt;a href=&quot;https://github.com/mattphillips/babel-plugin-console/blob/master/README.md#macros&quot;&gt;a macro version of itself&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;scope&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'babel-plugin-console/scope.macro'&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oneHundred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;scope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Add 100 to another number'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;oneHundred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, when that code is run, the &lt;code class=&quot;highlighter-rouge&quot;&gt;scope&lt;/code&gt; function does some pretty nifty things:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Browser:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/mattphillips/babel-plugin-console/raw/53536cba919d5be49d4f66d957769c07ca7a4207/assets/add100-chrome.gif&quot; alt=&quot;Browser console scoping add100&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Node:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Node console scoping add100&quot; src=&quot;https://github.com/mattphillips/babel-plugin-console/raw/53536cba919d5be49d4f66d957769c07ca7a4207/assets/add100-node.png&quot; width=&quot;372&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Cool right? And using it is just like using any other dependency, except it has all the benefits mentioned above.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
